@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up</title>
+  <link rel="stylesheet" href="sign-up.css">
+
+</head>
+
+<body>
+  <div class="head">
+
+    <h1>Sign up</h1>
+  </div>
+
+  <div class="sign-up-main">
+    <div class="information">
+      <div class="js-error-message">
+
+
+      </div>
+
+      Sure-name:<span class="required">*</span>
+      <input class="js-sureName sure-name" type="text">
+    </div>
+    <div class="information">
+      First-name:<span class="required">*</span>
+      <input class="js-firstName first-name" required>
+    </div>
+    <div class="information">
+      UserName:<span class="required">*</span>
+      <input class="js-username user-name" required>
+    </div>
+    <div class="information">
+      Password:<span class="required">*</span>
+      <input type="password" class="js-password1 password1">
+    </div>
+
+    <div class="information">
+      Confirm:<span class="required">*</span>
+      <input type="password" class="js-password2 password2">
+    </div>
+    <div class="password-strength "> Your password is: <span class="js-check-test check-test"></span></div>
+    <div class="js-weak"></div>
+    <div class="js-strong"></div>
+    <div class="js-very-strong"></div>
+    <div>
+      <div>
+        <button class="js-sign-up sign-up-button">Sign-up</button>
+      </div>
+      <div class="sign-up-question"> Already have an account?</div>
+      <div class="log-in-link"><a href="student-login.html">Click here to Log-in</a></div>
+    </div>
+  </div>
+  <div class="js-data-main data-main">
+  </div>
+</body>
+<script src="signUp.js"></script>
+
+</html>

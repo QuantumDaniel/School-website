@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  background-image: url('images/5883.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display:flex;
+
+
+}
+
+.head {
+  position: absolute;
+  background-color: salmon;
+  border-style: double;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  height: 100px;
+  font-size: xx-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  z-index: 100;
+}
+h1{
+  margin-top:6px;
+}
+
+
+.sign-up-main {
+  margin: auto;
+  position: relative;
+  height: 430px;
+  max-width: 400px;
+  margin-top:110px;
+  background-color: rgb(112, 112, 230);
+  padding: 10px;
+  flex: 1;
+  text-wrap: none;
+  border: solid;
+}
+
+.sign-up-main:hover {
+  size: 50px;
+}
+
+.submit-details {
+  display: inline-block;
+}
+
+input {
+  margin-top: 20px;
+  height: 30px;
+  width: 200px;
+}
+
+.sign-up-button {
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 283px;
+  position: absolute;
+  margin-top: 12px;
+}
+
+a {
+  color: yellow;
+}
+
+.information {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 10px;
+  font-size: x-large;
+}
+
+/*
+.sure-name{
+  
+  
+
+}
+.first-name{
+
+}
+*/
+.user-name {
+  margin-left: 5px;
+
+}
+
+.password1 {
+  margin-left: 15px;
+
+}
+
+.password2 {
+  margin-left: 27px;
+}
+
+.password-strength {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.check-test {
+  font-weight: bold;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  background-color: white;
+  border-radius: 30px;
+  padding: 2px;
+  position: absolute;
+  margin-top: -15px;
+  width: 390px;
+  font-style: italic;
+  text-align: center;
+}
+
+.required {
+  color: red;
+  font-size: 18px;
+
+}
+
+.weak {
+  background-color: white;
+  width: 100px;
+  height: 10px;
+  border-radius: 30px;
+  display: inline-block;
+  margin-left: 7px;
+  font-size: x-small;
+  text-align: center;
+  position: absolute;
+  color: red;
+}
+
+.strong {
+  background-color: white;
+  width: 100px;
+  height: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-left: 100px;
+  font-size: x-small;
+  text-align: center;
+  position: absolute;
+
+}
+
+.very-strong {
+  background-color: white;
+  width: 100px;
+  height: 10px;
+  border-radius: 30px;
+  display: inline-block;
+  margin-left: 190px;
+  font-size: x-small;
+  text-align: center;
+  position: absolute;
+}
+
+.sign-up-question {
+  position: absolute;
+  margin-top: 10px;
+}
+
+.log-in-link {
+  position: absolute;
+  margin-top: 25px;
+}
+
+.data-main {
+  left: 0;
+  right: 0;
+  height: 100px;
+  font-size: large;
+}
+
+.data {
+  margin-left: 30px;
+  border-style: solid;
+  margin-top: 5px;
+
+}
+
+span {
+  margin-left: 10px;
+}
