@@ -1190,7 +1190,6 @@ height:fit-content;
     margin-top:190px;
     margin-left:-20px;
     margin-right:40px;
-      background: red;
   }
   .school li{
     list-style:none;
@@ -1202,5 +1201,8 @@ height:fit-content;
   }
   .footer{
     height:70vh;
+  }
+  .programs{
+    margin-top:220px;
   }
 }
