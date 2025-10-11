@@ -374,3 +374,21 @@ body {
 }
   
 }
+@media (max-width:361px){
+        .username {
+    width:330px !important;
+    left:10px;
+        }
+.password {
+    width:330px !important;
+    left:10px;
+        }
+.show {
+    margin-left:310px !important;
+
+}
+.submit {
+    margin-left:-50px !important;
+    width:320px !important;
+}
+}

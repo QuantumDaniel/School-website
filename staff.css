@@ -218,3 +218,10 @@ button {
     margin-left:-200px;
   }
 }
+
+@media (max-width:355px){
+    .buttons{
+    margin-left:-30px;
+
+    }
+}
