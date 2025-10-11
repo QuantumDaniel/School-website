@@ -1,59 +1,30 @@
 const object = [
   {
     image: 'images/-r0lf6z@-1289732288.jpg',
-    title: 'Mom mngohol catherine \n Proprietress'
+    title: 'Abur Orhembaga Daniel (C.E.O)'
   },
   {
     image: 'images/-r0lf6z@-1289732288.jpg',
-    title: 'Bem  dajo  Gabriel  school\n Administrator'
-  },
-
-  {
-    image: 'images/-r0lf6z@-1289732288.jpg',
-    title: 'Abur Orhembaga Daniel \n Maths/Physics teacher'
+    title: 'Abur Orhembaga Daniel (C.E.O)'
   },
 
   {
     image: 'images/-r0lf6z@-1289732288.jpg',
-    title: 'corpers lodge'
+    title: 'Abur Orhembaga Daniel (C.E.O)'
+  },
+
+  {
+    image: 'images/-r0lf6z@-1289732288.jpg',
+    title: 'Abur Orhembaga Daniel (C.E.O)'
   },
   {
     image: 'images/-r0lf6z@-1289732288.jpg',
-    title: 'secondary block'
+    title: 'Abur Orhembaga Daniel (C.E.O)'
   },
 
   {
    image: 'images/-r0lf6z@-1289732288.jpg',
-    title: 'secondary block'
-  },
-
-  {
-    image: 'images/-r0lf6z@-1289732288.jpg',
-    title: 'primary block'
-  },
-
-  {
-   image: 'images/-r0lf6z@-1289732288.jpg',
-    title: 'junction'
-  },
-
-  {
-    image: 'images/-r0lf6z@-1289732288.jpg',
-    title: 'School gate'
-  },
-  {
-    image: 'images/-r0lf6z@-1289732288.jpg',
-    title: 'Liabrary'
-  },
-
-  {
-    image: 'Image/telescope logo.png',
-    title: 'School LOgo'
-  },
-
-  {
-    image: 'Image/IMG_20240526_182009_746 (1)@296927994.jpg',
-    title: 'Mission/vision'
+    title: 'Abur Orhembaga Daniel (C.E.O)'
   },
 
 ];

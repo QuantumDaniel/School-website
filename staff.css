@@ -150,6 +150,11 @@ button {
   }
  }
 
+ @media (max-width:361px){
+  .buttons{
+  margin-left:5px;
+  }
+ }
  @media (max-width:440px){
   .head{
    font-size:x-large;
