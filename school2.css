@@ -1183,3 +1183,24 @@ height:fit-content;
     top:400px;
   }
 }
+
+@media (max-width:361px){
+  .school{
+    font-size:10px;
+    margin-top:190px;
+    margin-left:-20px;
+    margin-right:40px;
+      background: red;
+  }
+  .school li{
+    list-style:none;
+  
+  }
+  .school ul{
+
+    margin-left:-15px;
+  }
+  .footer{
+    height:70vh;
+  }
+}

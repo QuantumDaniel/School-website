@@ -101,11 +101,6 @@ const objectPrimary = [
 
 ];
 
-
-
-
-
-
 let gallery = '';
 object.forEach((object) => {
 
