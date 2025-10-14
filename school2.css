@@ -60,10 +60,12 @@ body {
 .tool-tip{
   background:red;
   position:absolute;
-  text-align: start;
+  text-align:start;
+  justify-content:start;
   padding: 2px 10px;
   opacity:0;
   visibility:hidden;
+  width:200px;
 }
 .tool-tip a:hover{
   background:black;

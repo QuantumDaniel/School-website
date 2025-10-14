@@ -1,0 +1,82 @@
+body{
+    background-image:url("images/desktop-2880x1120-6-1920x747.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.admission-content{
+    position:absolute;
+    left:300px;
+    right:300px;
+    background:rgba(250,0,0,0.7);
+    border-radius:10px;
+    text-align:center;
+    align-content: center;
+    margin-top:150px;
+    height:120px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:x-large;
+    padding:10px;
+}
+input{
+    width:50%;
+    height:30px;
+    margin-top:8px;
+    font-size:20px;
+}
+.admission-button{
+    margin-left:390px;
+    margin-top:10px;
+}
+label{
+    color:white;
+    padding:5px;
+    border-style:solid;
+}
+
+@media (max-width:1300px){
+    .admission-content{
+        left:50px;
+        right:50px;
+    }
+    .admission-button{
+        margin-left:200px;
+    }
+}
+@media (max-width:443px){
+    .admission-content{
+        left:20px;
+        right:20px;
+        font-size:18px;
+    }
+    input{
+        width:90%;
+    }
+     body{
+        background-attachment:fixed;
+        background-position:-800px;
+    }
+}
+
+@media (max-width:609px){
+    body{
+        background-attachment:fixed;
+        background-position:-900px;
+    }
+}
+@media (max-width:355px){
+    .admission-content{
+        left:5px;
+        right:5px;
+        font-size:18px;
+
+    }
+    input{
+        width:90%;
+    }
+    body{
+        background-attachment:fixed;
+        background-position:-500px;
+    }
+}
