@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission form</title>
+    <link rel="stylesheet" href="admission-form.css">
+    <link rel="stylesheet" href="school2.css">
+    <link rel="stylesheet" href="bar.css">
+
+</head>
+
+<body>
+ 
+      <div class="form-container">
+    <h1>Secondary/Primary School Admission Form</h1>
+    <form>
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter full name" required />
+
+      <label>Date of Birth</label>
+      <input type="date" required />
+
+      <label>Gender</label>
+      <select required>
+        <option value="">Select gender</option>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+
+      <label>Parent/Guardian Name</label>
+      <input type="text" placeholder="Enter parent's name" required />
+
+      <label>Email</label>
+      <input type="email" placeholder="Enter email address" required />
+
+      <label>Phone Number</label>
+      <input type="tel" placeholder="Enter phone number" required />
+
+      <label>Address</label>
+      <textarea rows="3" placeholder="Enter home address" required></textarea>
+
+      <label>Previous School</label>
+      <input type="text" placeholder="Enter previous school name" />
+
+      <label>Class Applying For</label>
+      <select required>
+        <option value="">Select class</option>
+        <option>JSS1</option>
+        <option>JSS2</option>
+        <option>JSS3</option>
+        <option>SS1</option>
+        <option>SS2</option>
+        <option>SS3</option>
+        <option>Kindergarten</option>
+        <option>Nursery</option>
+        <option>Primary1</option>
+        <option>Primary2</option>
+        <option>Primary3</option>
+        <option>Primary4</option>
+        <option>Primary5</option>
+        <option>Primary6</option>
+
+      </select>
+
+      <label>Upload Passport Photo</label>
+      <input type="file" accept="image/*"/>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+
+    <script src="school-script.js"></script>
+    <script src="bar.js"></script>
+    <script src="admission-form.js"></script>
+</body>
+
+</html>

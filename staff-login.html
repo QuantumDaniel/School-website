@@ -37,7 +37,6 @@
         <li> <a href="#"> PAYMENT</a></li>
         <li> <a href="staff.html"> STAFF</a></li>
         <li> <a href="school2-gallery.html"> GALLERY</a></li>
-
       </ul>
     </div>
   </div>
@@ -53,14 +52,22 @@
         <ul>
           <li> <a href="school2.html">HOME</a></li>
           <li><button class="scroll-down">MISSION/VISION</button></li>
-          <li> <a href="#"> ADMISSION</a></li>
+          <div class="tool-tip-login">
+            <li>
+              <a href=" "> ADMISSION</a>
+            </li>
+            <div class="tool-tip">
+              <a href="admission-form.html">Admision form</a>
+              <a href="check-admission.html"> Check Admission</a>
+            </div>
+          </div>
           <div class="tool-tip-login">
             <li>
               <a href=" "> LOGIN</a>
             </li>
             <div class="tool-tip">
-              <a href="student-login.html"> STUDENT</a>
-              <a href="staff-login.html"> STAFF</a>
+              <a href="student-login.html">Student Login</a>
+              <a href="staff-login.html"> Staff Login</a>
             </div>
           </div>
           <li> <a href="#"> PAYMENT</a></li>
@@ -79,21 +86,22 @@
     </div>
 
   </div>
+  <div class="log-in-main">
   <div class="log-in-container">
 
     <br>
     <div>
       <div class="login-container">
-        <input class="js-userName username" type="text" placeholder=" Enter your Username">
+        <input class="js-userName username" type="text" placeholder=" Enter your Username" required>
 
         <div>
 
-          <input class="js-password password" placeholder="Enter your Password" type="password">
+          <input class="js-password password" placeholder="Enter your Password" type="password" required>
           <button class="js-show show "> <img class="password-image" src="images/download (2).png"></button>
         </div>
         <div class="js-strong"></div>
         <div class="account-container">
-          <button class="js-submit submit">Log-in</button>
+          <button class="js-submit submit" type = "submit">Log-in</button>
           <div class="log-in-question"> Already have an account?</div>
           <a class="sign-up-click" href="sign-up.html"> sign up here</a>
           <a class="forgot-password" href="reset-password.html">Forgot password?</a>
@@ -101,6 +109,9 @@
         </div>
       </div>
     </div>
+  </div>
+</div>
+
     <script src="staff-login.js"></script>
     <script src="school-script.js"></script>
     <script src="bar.js"></script>
