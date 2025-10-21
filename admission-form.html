@@ -4,76 +4,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admission form</title>
+    <title>Admission Form</title>
     <link rel="stylesheet" href="admission-form.css">
     <link rel="stylesheet" href="school2.css">
     <link rel="stylesheet" href="bar.css">
-
 </head>
 
 <body>
- 
-      <div class="form-container">
-    <h1>Secondary/Primary School Admission Form</h1>
-    <form>
-      <label>Full Name</label>
-      <input type="text" placeholder="Enter full name" required />
+    <div class="contact">
+        <div class="contact-details">
+            <div class="call-image"><img src="images/download (1).png" alt="call"></div>(+2434)9042898107
+        </div>
+        <div class="adress">PMB 190 Jeje, Nasarawa State</div>
+        <div class="time">Time: MOnday-Friday 8:00am-3:00pm</div>
+        <div class="social-media">
+            <a href="https://web.facebook.com/share/p/1BNzeLS2kA/" class="social-icon "> <img title="Facebook"
+                    src="images/670024.png" alt="Facebook"></a>
+            <a href="#" class="social-icon "><img title="WastApp" src="images/2504957.png" alt="watsapp"></a>
+            <a href="#" class="social-icon "><img title="Twitter" src="images/3117702.png" alt="twitter"></a>
 
-      <label>Date of Birth</label>
-      <input type="date" required />
+        </div>
 
-      <label>Gender</label>
-      <select required>
-        <option value="">Select gender</option>
-        <option>Male</option>
-        <option>Female</option>
-      </select>
+    </div>
+    <div class="menu-content side-bar-content">
+        <div class="side-menu-content">
+            <ul class="head-list">
+                <li> <a href="school2.html">HOME</a></li>
+                <li> <a href="contact.html"> CONTACT</a></li>
+                <li> <a href="#">MISSION/VISION </a></li>
+                <li> <a href="#"> ADMISSION</a></li>
+                <li> <a href="student-login.html"> STUDENT</a> </li>
+                <li> <a href="#"> PAYMENT</a></li>
+                <li> <a href="staff.html"> STAFF</a></li>
+                <li> <a href="school2-gallery.html"> GALLERY</a></li>
+            </ul>
+        </div>
+    </div>
 
-      <label>Parent/Guardian Name</label>
-      <input type="text" placeholder="Enter parent's name" required />
 
-      <label>Email</label>
-      <input type="email" placeholder="Enter email address" required />
+    <div class="head">
 
-      <label>Phone Number</label>
-      <input type="tel" placeholder="Enter phone number" required />
+        <div class="logo">
+            <img class="circular-image" src="telescope logo.png" alt="School logo" title="School Logo">
+        </div>
+        <div class="school-name">
+            <div class="menu">
+                <ul>
+                    <li> <a href="school2.html">HOME</a></li>
+                    <li><button class="scroll-down">MISSION/VISION</button></li>
+                    <div class="tool-tip-login">
+                        <li>
+                            <a href=" "> ADMISSION</a>
+                        </li>
+                        <div class="tool-tip">
+                            <a href="#">Admision form</a>
+                            <a href="#"> Check Admission</a>
+                        </div>
+                    </div>
+                    <div class="tool-tip-login">
+                        <li>
+                            <a href=" "> LOGIN</a>
+                        </li>
+                        <div class="tool-tip">
+                            <a href="student-login.html">Student Login</a>
+                            <a href="staff-login.html"> Staff Login</a>
+                        </div>
+                    </div>
+                    <li> <a href="#"> PAYMENT</a></li>
+                    <li> <a href="staff.html"> STAFF</a></li>
+                    <li> <a href="school2-gallery.html"> GALLERY</a></li>
+                </ul>
+            </div>
+            <div class="name-container">
+                <div class="name">Telescope School's</div>
+            </div>
+        </div>
 
-      <label>Address</label>
-      <textarea rows="3" placeholder="Enter home address" required></textarea>
+        <div class="side-menu-div"><button class="side-menu-button side-bar">Menu</button></div>
+        <div class="motto">
+            <marquee>Motto: Training visionary Leaders</marquee>
+        </div>
 
-      <label>Previous School</label>
-      <input type="text" placeholder="Enter previous school name" />
+    </div>
+    <div class="admission-page">
+        <div class="admission-form-container">
+            <h1 class="admission-title">Secondary/Primary School Admission Form</h1>
+            <form class="admission-form">
+                <label>Full Name(Family name, first name, others)</label>
+                <input id = "Names" type="text" placeholder="Enter full name" required />
 
-      <label>Class Applying For</label>
-      <select required>
-        <option value="">Select class</option>
-        <option>JSS1</option>
-        <option>JSS2</option>
-        <option>JSS3</option>
-        <option>SS1</option>
-        <option>SS2</option>
-        <option>SS3</option>
-        <option>Kindergarten</option>
-        <option>Nursery</option>
-        <option>Primary1</option>
-        <option>Primary2</option>
-        <option>Primary3</option>
-        <option>Primary4</option>
-        <option>Primary5</option>
-        <option>Primary6</option>
+                <label>Date of Birth</label>
+                <input class = "date" type="date" required />
 
-      </select>
+                <label>Gender</label>
+                <select required>
+                    <option value="">Select gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
 
-      <label>Upload Passport Photo</label>
-      <input type="file" accept="image/*"/>
+                <label>Parent/Guardian Name</label>
+                <input type="text" placeholder="Enter parent's name" required />
 
-      <button type="submit">Submit Application</button>
-    </form>
-  </div>
+                <label>Email</label>
+                <input type="email" placeholder="Enter email address" required />
 
+                <label>Phone Number</label>
+                <input type="tel" placeholder="Enter phone number" required />
+
+                <label>Address</label>
+                <textarea rows="3" placeholder="Enter home address" required></textarea>
+
+                <label>Previous School</label>
+                <input type="text" placeholder="Enter previous school name" />
+
+                <label>Class Applying For</label>
+                <select required>
+                    <option value="">Select class</option>
+                    <option>JSS1</option>
+                    <option>JSS2</option>
+                    <option>JSS3</option>
+                    <option>SS1</option>
+                    <option>SS2</option>
+                    <option>SS3</option>
+                    <option>Kindergarten</option>
+                    <option>Nursery</option>
+                    <option>Primary1</option>
+                    <option>Primary2</option>
+                    <option>Primary3</option>
+                    <option>Primary4</option>
+                    <option>Primary5</option>
+                    <option>Primary6</option>
+                </select>
+
+                <label>Upload Passport Photo</label>
+                <input type="file" accept="image/*" />
+                <button id= "draft" type = "button">Save to Draft</button>
+
+                <button type = "button" id = "submit-application" type="submit">Submit Application</button>
+            </form>
+        </div>
+        
+    </div>
+
+    <script src="admission-form.js"></script>
     <script src="school-script.js"></script>
     <script src="bar.js"></script>
-    <script src="admission-form.js"></script>
 </body>
 
 </html>

@@ -95,22 +95,21 @@
 
       <div class="input-container">
         <form>
-          <input class="js-userName username" type="text" placeholder=" Enter your ID" name = "userName" autocomplete="on">
+          <input class="js-userName username" type="text" placeholder=" Enter your ID" name = "userName" autocomplete="on" required>
           <div class="check-id"></div>
     
-          <input class="js-password password" placeholder="Enter your Password" type="password" name = "password">
+          <input class="js-password password" placeholder="Enter your Password" type="password" name = "password" required>
           <div class="check-password"></div>
-          </form>
           
-      
         <div class=show-button><button class="js-show show "> <img class="password-image"
               src="images/download (2).png"></button></div>
       </div>
       <div class="save-password"><input type="checkbox" id = "password" autocomplete="on" name = "password"> <label for="password">Remember Me</label></div>
       
       <div class="account-container">
-        <button class="js-submit submit">Sign-in</button>
+        <button class="js-submit submit" type = "submit">Sign-in</button>
       </div>
+      </form>
     </div>
   </div>
   <script src="student-log-in.js"></script>
