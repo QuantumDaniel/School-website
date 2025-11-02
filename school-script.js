@@ -14,39 +14,39 @@ const images = [
 
 const items = [
   {
-    line1: '<img src = "images/IMG_20240526_182650_260 (1) (2)@-2007831903.jpg" alt= "pre-nursery" loading = "lazy">',
-    line2: 'Heading',
-    text: 'This is an example',
+    line1: '<img class = "program-image" src = "images/STEP-768x385.jpg" alt= "pre-nursery" loading = "lazy">',
+    line2: 'Science and Technology',
+    text: 'Focus: Physics, Chemistry, Biology, Computer Science and other STEM Subjects to prepare students for further study or technology careers',
     button: 'Learn More'
   },
   {
-    line1: '<img src = "images/IMG_20240526_180029_262 (1) (1)@1351912044.jpg" alt= "Primary" loading = "lazy">',
-    line2: 'Heading',
-    text: 'This is an example',
+    line1: '<img class = "program-image" src = "images/STEP-768x385.jpg" alt= "Primary" loading = "lazy">',
+    line2: 'Art and Humanities',
+    text: 'Focus: Literature, History, Geography, Language, Creative and Performing Arts-for students with strengths in writin, culture, expression',
     button: 'Learn More'
   },
   {
-    line1: '<img src = "images/IMG_20240526_181319_082 (1)@1716450734.jpg" alt= "Secondary"  loading = "lazy">',
-    line2: 'Heading',
-    text: 'This is an example',
+    line1: '<img class = "program-image" src = "images/STEP-768x385.jpg" alt= "Secondary"  loading = "lazy">',
+    line2: 'Business and Entrepreneurship',
+    text: 'Focus: Economics, Business Studies, Entrepreneurship-equiping learners for self-employment or business carers worl wide',
     button: 'Learn More'
   },
   {
-    line1: '<img src = "images/IMG_20240526_182650_260 (1) (2)@-2007831903.jpg" alt= "pre-nursery" loading = "lazy">',
-    line2: 'Heading',
-    text: 'This is an example',
+    line1: '<img class = "program-image" src = "images/202302-NER-41-scr.webp" alt= "pre-nursery" loading = "lazy">',
+    line2: 'Technical and Vocational',
+    text: 'Focus: Technical subjects (e.g., Technical Drawing, Wood/Metalwork, Building Construction) and vocational skills like agriculture or home economics.',
     button: 'Learn More'
   },
   {
-    line1: '<img src = "images/IMG_20240526_180029_262 (1) (1)@1351912044.jpg" alt= "Primary" loading = "lazy">',
-    line2: 'Heading',
-    text: 'This is an example',
+    line1: '<img class = "program-image" src = "images/20251028_215457.jpg" alt= "Primary" loading = "lazy">',
+    line2: 'ICT and Digital Innovation',
+    text: 'Focus: Digital literacy, programming, robotics, data science, cybersecurity-acknoledding modern curriculum expansions into these areas',
     button: 'Learn More'
   },
   {
-    line1: '<img src = "images/IMG_20240526_181319_082 (1)@1716450734.jpg" alt= "Secondary" loading = "lazy">',
-    line2: 'Heading',
-    text: 'This is an example',
+    line1: '<img class = "program-image" src = "images/20251028_215457.jpg" alt= "Secondary" loading = "lazy">',
+    line2: 'Health and Life Science',
+    text: 'Focus: Biology, Human Anatomy/Physiology, Public Health, Biomedical Sciences-preparing for health-ralated tertiary studies and careers.',
     button: 'Learn More'
   },
 
@@ -87,14 +87,21 @@ window.addEventListener("scroll", function () {
 
 const topBtn = document.querySelector('.top-button');
 const bottomBtn = document.querySelector('.scroll-down');
+const programme = document.querySelector('.programme');
 
 topBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
 bottomBtn.addEventListener('click', () => {
-  window.scrollTo({ top: 2500, behavior: "smooth" });
+  window.scrollTo({ top: 2450, behavior: "smooth" });
 });
+
+programme.addEventListener('click', () => {
+  window.scrollTo({ top: 600, behavior: "smooth" });
+});
+
+
 /*
 //scroll to bottom
 bottomBtn.addEventListener('click', () => {
