@@ -58,7 +58,7 @@ items.forEach((item) => {
 <div class="items">
           <h1 class="grid-display-item1">${item.line1}</h1>
           <div class="grid-display-item2">${item.line2}</div>
-          <p class = "text">${item.text}</p>
+         
           <button class="grid-button">
             <a href="#">
               ${item.button}

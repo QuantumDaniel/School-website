@@ -7,16 +7,23 @@
   <link rel="stylesheet" href="student-dashboard.css" />
 </head>
 <body>
+  <div class="modal">
+    <h3>Are you sure you want to log out?</h3>
+    <div class="buttons">
+      <button class = "yes-button">YES</button>
+      <button class = "no-button">NO</button>
+    </div>
+  </div>
   <div class="sidebar">
     <div>
       <h2>Dashboard</h2>
       <div class="nav-links">
-        <a href="#">Results</a>
-        <a href="#">Assignments</a>
-        <a href="#">Attendance</a>
-        <a href="#">Fees</a>
-        <a href="#">Notices</a>
-        <a href="#">Profile</a>
+        <a href="#" class = "result">Results</a>
+        <a href="#" class = "assignment">Assignments</a>
+        <a href="#" class = "attendance">Attendance</a>
+        <a href="#" class = "fees">Fees</a>
+        <a href="#" class = "notice">Notices</a>
+        <a href="#" class = "profile">Profile</a>
       </div>
     </div>
     <div class="logout">Logout</div>
@@ -32,6 +39,7 @@
           <p>Admission No: <span class="admission-number"></span></p>
         </div>
       </div>
+      <h2 class="title">Sections</h2>
     </div>
 
     <div class="dashboard-sections">

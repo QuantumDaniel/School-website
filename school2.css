@@ -5,6 +5,9 @@ body {
   font-family: var(--font_family_body);
   font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
 }
+htm{
+  scroll-behavior: smooth;
+}
 .social-media .social-icon{
   height:3%;
   width:3%;
@@ -769,9 +772,8 @@ button:hover {
 }
 
 .mission-content {
-  height:fint-content;
-  width: 60%;
-
+  height:fit-content;
+  width: 50%;
   background-color: antiquewhite;
   border-radius: 10px;
 
@@ -785,7 +787,7 @@ button:hover {
 .mission-picture {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 15px;
 
 }
 
