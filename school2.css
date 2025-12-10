@@ -500,12 +500,12 @@ a {
 
 .menu-content {
   background-color: red;
-  width: 200px;
+  width: 250px;
   height: 90vh;
   position: fixed;
-  top: 50px;
+  top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 1050;
   display: none;
   overflow: scroll;
 
