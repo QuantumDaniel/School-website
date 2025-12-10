@@ -94,7 +94,7 @@ topBtn.addEventListener('click', () => {
 });
 
 bottomBtn.addEventListener('click', () => {
-  window.scrollTo({ top: 2450, behavior: "smooth" });
+  window.scrollTo({ top: 2150, behavior: "smooth" });
 });
 
 programme.addEventListener('click', () => {
