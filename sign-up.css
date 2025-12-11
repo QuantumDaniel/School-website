@@ -37,6 +37,7 @@ h1{
   flex: 1;
   text-wrap: none;
   border: solid;
+  border-radius:20px;
 }
 
 .sign-up-main:hover {
