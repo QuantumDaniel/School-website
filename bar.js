@@ -15,15 +15,15 @@ handleResize();
 menu.addEventListener('click', () => {
     handleResize();
     
-    if (menu.innerHTML === 'Menu') {
+    if (menu.innerHTML === '☰') {
 
         display.style.opacity = 1;
-        menu.innerHTML = 'X';
+        menu.innerHTML = '✖';
         side.style.display = 'block';
     }
-    else if (menu.innerHTML === 'X') {
+    else if (menu.innerHTML === '✖') {
         display.style.opacity = 0;
-        menu.innerHTML = 'Menu';
+        menu.innerHTML = '☰';
     }
 });
 

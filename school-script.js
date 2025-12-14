@@ -71,15 +71,39 @@ items.forEach((item) => {
 });
 // make head shrink on scroll
 document.querySelector('.grid').innerHTML = content;
+const sideBar = document.querySelector(".menu-content");
+const sideMenu = document.querySelector(".side-menu-div");
 
 window.addEventListener("scroll", function () {
   const navbar = document.querySelector(".head");
   if (window.scrollY > 50) {
     navbar.classList.add("shrink");
+    sideBar.style.top = "73px";
   } else {
     navbar.classList.remove("shrink");
+    sideBar.style.top = "78px";
   }
 });
+
+//remove side bar as the screen size gets larger
+
+
+function handleSidebarVisibility() {
+  if (window.innerWidth <= 1500) {
+    sideBar.style.display = "none";
+   // sideMenu.innerHTML = 'Menu';
+  } else {
+    sideBar.style.display = "block";
+   // sideMenu.innerHTML = 'X';
+  }
+}
+
+// Run on load
+handleSidebarVisibility();
+
+// Run on resize
+window.addEventListener("resize", handleSidebarVisibility);
+
 
 // scroll page to top
 
