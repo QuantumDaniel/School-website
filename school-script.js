@@ -89,7 +89,7 @@ window.addEventListener("scroll", function () {
 
 
 function handleSidebarVisibility() {
-  if (window.innerWidth <= 1500) {
+  if (window.innerWidth >= 1000) {
     sideBar.style.display = "none";
    // sideMenu.innerHTML = 'Menu';
   } else {

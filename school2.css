@@ -884,6 +884,20 @@ li .scroll-down{
     height:fit-content;
   }
 }
+
+@media (max-width:1250px){
+
+.head.shrink .school-name{
+  margin-right:150px;
+  font-size:14px;
+  gap: 0.1em;
+}
+.head.shrink .button{
+  font-size:10px;
+
+}
+
+}
 @media (max-width: 1000px) {
   .items{
 
