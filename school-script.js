@@ -111,6 +111,7 @@ window.addEventListener("resize", handleSidebarVisibility);
 
 const topBtn = document.querySelector('.top-button');
 const bottomBtn = document.querySelector('.scroll-down');
+const bottomBtn2 = document.querySelector('.scroll-down2');
 const programme = document.querySelector('.programme');
 
 topBtn.addEventListener('click', () => {
@@ -119,6 +120,10 @@ topBtn.addEventListener('click', () => {
 
 bottomBtn.addEventListener('click', () => {
   window.scrollTo({ top: 2150, behavior: "smooth" });
+});
+
+bottomBtn2.addEventListener('click', () => {
+  window.scrollTo({ top: 2500, behavior: "smooth" });
 });
 
 programme.addEventListener('click', () => {
@@ -153,7 +158,7 @@ function button1Animation() {
   document.querySelector('.button1').addEventListener('click', () => {
     changeBackground.style.backgroundImage = "url('images/Admistrative block.jpg')";
     document.querySelector('.display-name').innerHTML = "Welcome to Telescope<br> International Schools <br> Jeje Karshi";
-    document.querySelector('.view-more').innerHTML = "view more...";
+    document.querySelector('.view-more').innerHTML = "View 👉..";
   });
 }
 button1Animation();
@@ -161,7 +166,7 @@ function button2Animation() {
   document.querySelector('.button2').addEventListener('click', () => {
     changeBackground.style.backgroundImage = "url('images/IMG_20240526_180109_087 (1) (1)@249234736.jpg')";
     document.querySelector('.display-name').innerHTML = "Conducive Atmospere <br> for Efficient Learning";
-    document.querySelector('.view-more').innerHTML = "Explore more...";
+    document.querySelector('.view-more').innerHTML = "Explore...";
   });
 }
 button2Animation();
@@ -178,10 +183,32 @@ function button4Animation() {
   document.querySelector('.button4').addEventListener('click', () => {
     changeBackground.style.backgroundImage = "url('images/IMG_20240526_180136_107 (1) (1)@633120083.jpg')";
     document.querySelector('.display-name').innerHTML = "Experienced and <br> Dedicated Staff";
-    document.querySelector('.view-more').innerHTML = "Meet our staff...";
+    document.querySelector('.view-more').innerHTML = "View 👉...";
   });
 };
 button4Animation();
+
+//sid bar tool tip
+
+const admission = document.querySelectorAll('.admission-side');
+const admissionSideMain = document.querySelectorAll('.admission-side-main');
+
+admissionSideMain.forEach((li)=>{
+  li.addEventListener('click',()=>{
+admission.forEach((add)=>{
+
+
+  if(add.style.display === 'block'){
+    add.style.display = 'none';
+  }
+  else{
+add.style.display = 'block';
+  }
+  })
+
+})
+
+});
 
 // Select all buttons and the container whose background will change
 const buttons = document.querySelectorAll('.color-btn');
@@ -307,3 +334,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   observer.observe(document.querySelector(".mission-content"));
 });
+
+console.log(window.innerWidth);
