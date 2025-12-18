@@ -91,11 +91,13 @@ window.addEventListener("scroll", function () {
 function handleSidebarVisibility() {
   if (window.innerWidth >= 1000) {
     sideBar.style.display = "none";
-   // sideMenu.innerHTML = 'Menu';
+   // sideMenu.innerHTML = '☰';
   } else {
     sideBar.style.display = "block";
-   // sideMenu.innerHTML = 'X';
+   // sideMenu.innerHTML = '✖';
   }
+    
+    
 }
 
 // Run on load
@@ -127,7 +129,7 @@ bottomBtn2.addEventListener('click', () => {
 });
 
 programme.addEventListener('click', () => {
-  window.scrollTo({ top: 600, behavior: "smooth" });
+  window.scrollTo({ top: 540, behavior: "smooth" });
 });
 
 
@@ -193,8 +195,13 @@ button4Animation();
 const admission = document.querySelectorAll('.admission-side');
 const admissionSideMain = document.querySelectorAll('.admission-side-main');
 
-admissionSideMain.forEach((li)=>{
+admissionSideMain.forEach((li,index)=>{
   li.addEventListener('click',()=>{
+
+   const contents = admission[index];
+  //const contents = li.nextElementSibling;
+    contents.style.display = contents.style.display === 'block' ? 'none' : 'block';
+    /*
 admission.forEach((add)=>{
 
 
@@ -204,7 +211,9 @@ admission.forEach((add)=>{
   else{
 add.style.display = 'block';
   }
+
   })
+  */
 
 })
 
@@ -335,4 +344,4 @@ document.addEventListener("DOMContentLoaded", () => {
   observer.observe(document.querySelector(".mission-content"));
 });
 
-console.log(window.innerWidth);
+//console.log(window.innerWidth);
