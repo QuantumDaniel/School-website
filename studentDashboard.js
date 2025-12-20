@@ -19,18 +19,9 @@ let sections = document.querySelector('.dashboard-sections');
 result.addEventListener('click', () => {
   title.innerHTML = " Results"
   sections.innerHTML = `
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Student Dashboard - Results</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
+ 
   <div class="dashboard">
-    <h1>Student Result Dashboard</h1>
+    <h1 class = "result-school-name">TELESCOPE INTERNATIONAL SCHOOLS TERMINAL RESULT</h1>
 
     <!-- Selectors -->
     <div class="selectors">
@@ -141,10 +132,7 @@ result.addEventListener('click', () => {
 
   </div>
 
-</body>
-</html>
 
-  
   `;
 
 });

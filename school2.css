@@ -5,7 +5,7 @@ body {
   font-family: var(--font_family_body);
   font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
 }
-htm{
+html{
   scroll-behavior: smooth;
 }
 .social-media .social-icon{
@@ -376,6 +376,8 @@ a {
   object-fit: cover;
   margin-top: 0;
 }
+
+
 
 .grid-display-item2 {
   width: 100%;
@@ -856,9 +858,6 @@ li .scroll-down{
 
 @media (min-width: 1500px) {
   .contact{
-    background:red;
-  }
-  .circular-image{
   margin-top:5px;
   }
   .head.shrink .circular-image {
@@ -880,6 +879,9 @@ li .scroll-down{
   .mission-content{
     height:fit-content;
   }
+  .school ul {
+    font-size:20px;
+  }
 }
 
 @media (max-width:1250px){
@@ -891,8 +893,6 @@ li .scroll-down{
 }
 .head.shrink .button{
   font-size:10px;
-
-}
 
 }
 @media (max-width: 1000px) {
@@ -1020,7 +1020,10 @@ width:45%;
   .contact {
     height: fit-content;
     padding: 5px;
-    font-size: small;
+    font-size: 15px;
+  }
+  .circular-image2{
+    margin-top:130px;
   }
 
   .name {
@@ -1042,6 +1045,7 @@ width:45%;
     font-size:55px;
     margin-top:10px;
   }
+  
 }
 @media (max-width:618px) {
   .display-name {
@@ -1185,6 +1189,9 @@ height:fit-content;
   height: 50vh;
   margin-top: 40px;
   margin-bottom: -15vh;
+}
+.contact{
+  background:red !important;
 }
 }
 
