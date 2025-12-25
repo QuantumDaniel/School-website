@@ -1,10 +1,10 @@
 
-localStorage.getItem("studentDetails")
+localStorage.getItem("studentDetails");
 window.onload = function () {
   const user = JSON.parse(localStorage.getItem("studentDetails"));
   if (user) {
     document.querySelector(".name").textContent = user.name;
-    document.querySelector(".class").textContent = user.class;
+    document.querySelector(".class").textContent = user.class.className;
     document.querySelector(".admission-number").textContent = user.admissionNumber;
     document.querySelector(".profile-image").src = user.src;
   } else {
@@ -16,12 +16,13 @@ window.onload = function () {
 let result = document.querySelector('.result');
 let title = document.querySelector('.title');
 let sections = document.querySelector('.dashboard-sections');
+const user = JSON.parse(localStorage.getItem("studentDetails"));
 result.addEventListener('click', () => {
   title.innerHTML = " Results"
   sections.innerHTML = `
  
   <div class="dashboard">
-    <div><div class="logo-container"><img src="images/telescope logo.png" alt="call"></div><h1 class = "result-school-name">TELESCOPE INTERNATIONAL SCHOOLS TERMINAL RESULT</h1></div>
+    <div><div class="logo-container"><img src="images/telescope logo.png" alt="call"></div><h1 class = "result-school-name">TELESCOPE INTERNATIONAL SCHOOLS FIRST TERM RESULT</h1></div>
 
     <!-- Selectors -->
     <div class="selectors">
@@ -37,10 +38,10 @@ result.addEventListener('click', () => {
 
     <!-- Student Info -->
     <div class="student-info">
-      <div class="info-card"><span>Name</span><strong>John Doe</strong></div>
-      <div class="info-card"><span>Admission No</span><strong>STD/2023/045</strong></div>
-      <div class="info-card"><span>Class</span><strong>SS 1 Science</strong></div>
-      <div class="info-card"><span>Class Teacher</span><strong>Mrs. A. Daniel</strong></div>
+      <div class="info-card"><span>Name</span><strong>${user.name}</strong></div>
+      <div class="info-card"><span>Admission No</span><strong>${user.admissionNumber}</strong></div>
+      <div class="info-card"><span>Class</span><strong>${user.class.className} ${user.department}</strong></div>
+      <div class="info-card"><span>Class Teacher</span><strong>${user.class.classTeacher}</strong></div>
     </div>
 
     <!-- Result Table -->
@@ -559,10 +560,10 @@ document.querySelector('.logout').addEventListener('click',()=>{
 
 
       
-        
+       
+      user.forEach((user)=>{
+            console.log(user);
+      });
       
   
-
-
-
 

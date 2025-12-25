@@ -112,28 +112,52 @@ const details = [
       userName: "daniel",
       password: '123',
       name: 'Abur Orhembaga Daniel',
-      class: 'SSS3',
-      admissionNumber: '1443678890DA',
+      class: {
+        className:'SSS3',
+        classTeacher: 'Mr. Okolo'
+      },
+      caScore:{
+        maths:24,
+        english:20,
+        physics:15
+      },
+      department:'Science',
+      admissionNumber: 'STD/2023/049',
       src:'images/file_00000000a3406246ba34253b705aaafa.png',
-      id: 1
+      id: 1,
+      exam:{
+        maths:50,
+        english:49,
+        physics:55,
+        remark: 'Excellent',
+        grade: 'A'
+      },
+      subjects:['Mathematics','English','Physics']
    },
+
    {
       userName: "samuel",
       name: 'Stev Samuel',
-      class: 'JSS3',
-      admissionNumber: '148328890BG',
+      class:{
+        className:'SSS1',
+        classTeacher: 'Mr. Oba'
+      },
+      department:'Science',
+      admissionNumber: 'STD/2023/040',
       password: '125',
       id: 2
    },
-
+/*
    {
       userName: "jen",
       password: '127',
       name: 'Jeniffer Ordue Charles',
       class: 'SS2',
-      admissionNumber: '19032290BC',
+      department:'Art',
+      admissionNumber: 'STD/2023/048',
       id: 3
    },
+   */
 
 ];
 
@@ -141,14 +165,35 @@ details.push(
   {
   userName: "Baby",
       name: 'Anyor benedictha',
-      class: 'JSS1',
-      admissionNumber: '19843939290TB',
+      class: {
+        className:'JSS3',
+        classTeacher: 'Mrs Agatha'
+      },
+      department:'Commercial',
+      admissionNumber: 'STD/2023/045',
       src: 'images/IMG_0535.jpeg',
       password: '129',
-      id:details.length +1
+      id:details.length +1,
+       caScore:{
+        maths:15,
+        english:20,
+        physics:19
+      },
+      exam:{
+        maths:58,
+        english:59,
+        physics:57,
+        remark: 'Excellent',
+        grade: 'A'
+      }
+
   }
 );
-console.log(details);
+//console.log(details);
+details.forEach((det)=>{
+console.log(det);
+});
+
 /*
 details.forEach((det)=>{
 document.querySelector('.js-submit').addEventListener('click',()=>{
@@ -218,3 +263,4 @@ document.addEventListener('keydown',(event)=>{
     loginFunc();
   }
 });
+//console.log(user[0]);
