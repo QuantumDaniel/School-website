@@ -127,7 +127,7 @@ result.addEventListener('click', () => {
       <div class="status">Result Status: Approved</div>
       <div class="actions">
         <button>Print Result</button>
-        <button>Download PDF</button>
+        <button class = "download-button">Download PDF</button>
       </div>
     </div>
 

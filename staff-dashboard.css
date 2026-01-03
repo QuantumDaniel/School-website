@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f1f5f9;
+    height: 100vh;
+    overflow: hidden; /* Prevent body scroll */
+}
+
+/* Layout */
+.dashboard {
+    display: flex;
+}
+
+/* ===== SIDEBAR (FIXED, NO SCROLL) ===== */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 230px;
+    height: 100vh;
+    background: #0f172a;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    background: #1e293b;
+}
+
+/* ===== MAIN CONTENT (SCROLLS) ===== */
+.main {
+    margin-left: 230px; /* same as sidebar width */
+    padding: 25px;
+    height: 100vh;
+    overflow-y: auto; /* only main scrolls */
+    width:100%;
+}
+
+/* Header */
+.header {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+/* Cards */
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+/* Steps */
+.step {
+    margin-bottom: 15px;
+}
+
+.step label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Forms */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cbd5e1;
+    width: 100%;
+}
+
+textarea {
+    grid-column: span 2;
+    min-height: 80px;
+}
+
+/* Attendance */
+.student-list {
+    margin-top: 15px;
+}
+
+.student-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+button {
+    padding: 10px;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.save-btn {
+    margin-top: 10px;
+}
+
+small {
+    display: block;
+    margin-top: 10px;
+    color: #64748b;
+}

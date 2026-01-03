@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Staff Dashboard</title>
+    <link rel="stylesheet" href="staff-dashboard.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>Staff Panel</h2>
+        <a href="#results">Results</a>
+        <a href="#assignments">Assignments</a>
+        <a href="#attendance">Attendance</a>
+        <a href="#profile">Profile</a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <header class="header">
+            <h1>Staff Dashboard</h1>
+            <p>All information entered here is reflected on the Student Dashboard</p>
+        </header>
+
+        <!-- ================= RESULTS ================= -->
+        <section id="results" class="card">
+            <h3>Upload Student Result</h3>
+
+            <div class="step">
+                <label>Select Class</label>
+                <select>
+                    <option>JSS 1</option>
+                    <option>JSS 2</option>
+                    <option>SS 1</option>
+                </select>
+            </div>
+
+            <div class="step">
+                <label>Select Subject</label>
+                <select>
+                    <option>Mathematics</option>
+                    <option>Physics</option>
+                    <option>Chemistry</option>
+                </select>
+            </div>
+
+            <div class="step">
+                <label>Select Student</label>
+                <select>
+                    <option>Daniel Abur</option>
+                    <option>John Doe</option>
+                </select>
+            </div>
+
+            <form class="grid">
+                <input type="number" placeholder="Assessment / CA (30)">
+                <input type="number" placeholder="Exam Score (70)">
+
+                <input type="text" placeholder="Total Score (Auto)">
+                <input type="text" placeholder="Grade (Auto)">
+
+                <button>Save Result</button>
+            </form>
+
+            <small>
+                * Total and Grade are calculated by the system and fetched by the student
+            </small>
+        </section>
+
+        <!-- ================= ASSIGNMENTS ================= -->
+        <section id="assignments" class="card">
+            <h3>Post Assignment</h3>
+
+            <div class="grid">
+                <select>
+                    <option>Select Class</option>
+                    <option>JSS 1</option>
+                    <option>SS 1</option>
+                </select>
+
+                <select>
+                    <option>Select Subject</option>
+                    <option>Mathematics</option>
+                    <option>Physics</option>
+                </select>
+
+                <input type="date">
+
+                <textarea placeholder="Assignment Instructions"></textarea>
+
+                <button>Post Assignment</button>
+            </div>
+
+            <small>
+                * Assignment becomes visible on the student dashboard instantly
+            </small>
+        </section>
+
+        <!-- ================= ATTENDANCE ================= -->
+        <section id="attendance" class="card">
+            <h3>Mark Attendance</h3>
+
+            <div class="step">
+                <label>Select Class</label>
+                <select>
+                    <option>JSS 1</option>
+                    <option>SS 1</option>
+                </select>
+            </div>
+
+            <!-- Student List (Appears after class selection) -->
+            <div class="student-list">
+                <div class="student-card">
+                    <p>Daniel Abur</p>
+                    <select>
+                        <option>Present</option>
+                        <option>Absent</option>
+                    </select>
+                </div>
+
+                <div class="student-card">
+                    <p>John Doe</p>
+                    <select>
+                        <option>Present</option>
+                        <option>Absent</option>
+                    </select>
+                </div>
+            </div>
+
+            <button class="save-btn">Save Attendance</button>
+
+            <small>
+                * Attendance percentage is calculated and shown to students
+            </small>
+        </section>
+
+        <!-- ================= PROFILE ================= -->
+        <section id="profile" class="card">
+            <h3>Staff Profile</h3>
+
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Department:</strong> Science</p>
+            <p><strong>Role:</strong> Subject Teacher</p>
+            <p><strong>Email:</strong> staff@school.com</p>
+
+            <button>Edit Profile</button>
+        </section>
+
+    </main>
+</div>
+
+</body>
+</html>
