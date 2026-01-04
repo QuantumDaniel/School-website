@@ -1,88 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
+  <title>School Event Videos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery</title>
   <link rel="stylesheet" href="videos.css">
-  <link rel="stylesheet" href="school2.css">
-  <link rel="stylesheet" href="bar.css">
 </head>
-
 <body>
-  <div class="contact">
-    <div class="contact-details">
-      <div class="call-image"><img src="images/download (1).png" alt="call"></div>(+2434)9042898107
-    </div>
-    <div class="adress">PMB 190 Jeje, Nasarawa State</div>
-    <div class="time">Time: MOnday-Friday 8:00am-3:00pm</div>
-    <div class="social-media">
-      <a href="https://web.facebook.com/share/p/1BNzeLS2kA/" class="social-icon "> <img title="Facebook"
-          src="images/670024.png" alt="Facebook"></a>
-      <a href="#" class="social-icon "><img title="WastApp" src="images/2504957.png" alt="watsapp"></a>
-      <a href="#" class="social-icon "><img title="Twitter" src="images/3117702.png" alt="twitter"></a>
+  
 
-    </div>
+  <!-- Page Header -->
+  <header class="page-header">
+    <h1>School Event Videos</h1>
+    <p>Watch highlights from our school activities</p>
+  </header>
 
-  </div>
-  <div class="menu-content side-bar-content">
-    <div class="side-menu-content">
-      <ul class="head-list">
-        <li> <a href="school2.html">HOME</a></li>
-        <li> <a href="contact.html"> CONTACT</a></li>
-        <li> <a href="#">MISSION/VISION </a></li>
-        <li> <a href="#"> ADMISSION</a></li>
-        <li> <a href="student-login.html"> STUDENT</a> </li>
-        <li> <a href="#"> PAYMENT</a></li>
-        <li> <a href="staff.html"> STAFF</a></li>
-        <li> <a href="school2-gallery.html"> GALLERY</a></li>
+  <!-- Video Gallery -->
+  <section class="video-gallery">
 
-      </ul>
-    </div>
-  </div>
-
-  <div class="head">
-
-    <div class="logo">
-      <img class="circular-image" src="telescope logo.png" alt="School logo" title="School Logo">
-    </div>
-    <div class="school-name">
-      <div class="menu">
-        <ul>
-          <li> <a href="school2.html">HOME</a></li>
-          <li><button class="scroll-down">MISSION/VISION</button></li>
-          <li> <a href="#"> ADMISSION</a></li>
-          <div class="tool-tip-login">
-            <li>
-              <a href=" "> LOGIN</a>
-            </li>
-            <div class="tool-tip">
-              <a href="student-login.html"> STUDENT</a>
-              <a href="staff-login.html"> STAFF</a>
-            </div>
-          </div>
-          <li> <a href="#"> PAYMENT</a></li>
-          <li> <a href="staff.html"> STAFF</a></li>
-          <li> <a href="school2-gallery.html"> GALLERY</a></li>
-        </ul>
+    <div class="video-item">
+      <div class="video-thumb">
+        <video poster="images/event1.jpg"></video>
+        <span class="play-icon">▶</span>
       </div>
-      <div class="name-container">
-        <div class="name">Telescope School's</div>
+      <h3>Science Fair 2025</h3>
+      <video data-src="videos/event1.mp4" hidden></video>
+    </div>
+
+    <div class="video-item">
+      <div class="video-thumb">
+        <video poster="images/event2.jpg"></video>
+        <span class="play-icon">▶</span>
       </div>
+      <h3>Annual Sports Day</h3>
+      <video data-src="videos/event2.mp4" hidden></video>
     </div>
 
-    <div class="side-menu-div"><button class="side-menu-button side-bar">Menu</button></div>
-    <div class="motto">
-      <marquee>Motto: Training visionary Leaders</marquee>
+    <div class="video-item">
+      <div class="video-thumb">
+        <video poster="images/event3.jpg"></video>
+        <span class="play-icon">▶</span>
+      </div>
+      <h3>Graduation Ceremony</h3>
+      <video data-src="videos/event3.mp4" hidden></video>
     </div>
 
+
+        <div class="video-item">
+      <div class="video-thumb">
+        <video poster="images/event1.jpg"></video>
+        <span class="play-icon">▶</span>
+      </div>
+      <h3>Science Fair 2025</h3>
+      <video data-src="videos/event1.mp4" hidden></video>
+    </div>
+
+    <div class="video-item">
+      <div class="video-thumb">
+        <video poster="images/event2.jpg"></video>
+        <span class="play-icon">▶</span>
+      </div>
+      <h3>Annual Sports Day</h3>
+      <video data-src="videos/event2.mp4" hidden></video>
+    </div>
+
+    <div class="video-item">
+      <div class="video-thumb">
+        <video poster="images/event3.jpg"></video>
+        <span class="play-icon">▶</span>
+      </div>
+      <h3>Graduation Ceremony</h3>
+      <video data-src="videos/event3.mp4" hidden></video>
+    </div>
+    
+    
+  </section>
+
+
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close-btn">&times;</span>
+    <video id="lightbox-video" controls></video>
   </div>
-  <div class="display-larg"></div>
-  <div class="js-image-display image-display"></div>
-  <script src="school-script.js"></script>
+
   <script src="videos.js"></script>
-  <script src="bar.js"></script>
 </body>
-
 </html>

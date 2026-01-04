@@ -1,67 +1,38 @@
-const object= [
-  {
-    image:'images/Admistrative block.jpg',
-  },
-  {
-    image:'images/IMG_20240526_182541_497 (5)@1394047752.jpg',
-  },
+document.addEventListener('DOMContentLoaded', () => {
 
-  {
-    image:'images/IMG_20240526_182650_260 (1) (2)@-2007831903.jpg',
-  },
-  {
-    image:'images/IMG_20240526_180109_087 (1) (1)@249234736.jpg',
-  },
+  const videoItems = document.querySelectorAll('.video-item');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxVideo = document.getElementById('lightbox-video');
+  const closeBtn = document.querySelector('.close-btn');
 
-  {
-    image:'images/IMG_20240526_180136_107 (1) (1)@633120083.jpg',
-  },
+  // Open lightbox when a video card is clicked
+  videoItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const hiddenVideo = item.querySelector('video[data-src]');
+      const src = hiddenVideo.dataset.src;
 
-  {
-    image:'images/IMG_20240526_180029_262 (1) (1)@1351912044.jpg',
-  },
+      if (!src) return;
 
-  {
-    image:'images/IMG_20240526_180540_199 (1) (1)@333951753.jpg',
-  },
+      lightbox.style.display = 'flex';
+      lightboxVideo.src = src;
+      lightboxVideo.play();
+    });
+  });
 
-  {
-    image:'images/IMG_20240526_180136_107 (1) (1)@633120083.jpg',
-  },
-  {
-    image:'images/IMG_20240526_181319_082 (1)@1716450734.jpg',
-  },
+  // Close lightbox
+  function closeLightbox() {
+    lightbox.style.display = 'none';
+    lightboxVideo.pause();
+    lightboxVideo.src = '';
+  }
 
-  {
-    image:'images/IMG_20240527_094240_272@-1113849659.jpg',
-  },
+  closeBtn.addEventListener('click', closeLightbox);
 
-  {
-    image:'images/IMG_20240526_180136_107 (1) (1)@633120083.jpg',
-  },
+  // Close when clicking outside video
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      closeLightbox();
+    }
+  });
 
-  {
-    image:'images/IMG_20240526_180136_107 (1) (1)@633120083.jpg',
-  },
-
-];
-
-let gallery='';
-object.forEach((object)=>{
-
-
- gallery +=`
-
-        <div class=" image1">
-         <img src="${object.image}">
-     </div>
-
-  
-  `
 });
-
-document.querySelector('.js-image-display').innerHTML=gallery;
-document.querySelectorAll('.image1').addEventListener('click',()=>{
-  alert('hello');
-  
-})

@@ -1,78 +1,130 @@
-
-
-.image1{
-  width:689px;
-  height:520px;
-  border-style:solid;
-  margin-top:5px;
-  border-color:green;
-  background-color: antiquewhite;
-  margin-left:3px;
-  
-}
-img{
-  max-width:100%;
-  height:auto;
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.title{
-  text-align:center;
-  margin-left:20px;
-  margin-right:20px;
-  margin-top:-5px;
-  border-style:solid;
-  background-color:blue;
-  color:white;
-  padding:3px 10px;
-  text-transform:uppercase;
-  font-size:bold;
-  position:relative;
-  border-radius:15px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+body {
+  font-family: system-ui, Arial, sans-serif;
+  background: #f4f6f8;
+  color: #333;
 }
 
-/*
-.image1:hover{
-  width: 410px;
-  height:340px;
-
-
+/* ===== HEADER ===== */
+.page-header {
+  text-align: center;
+  padding: clamp(1.5rem, 4vw, 3rem) 1rem;
+  background: #0a3d62;
+  color: #fff;
 }
 
-img:hover{
-  width: 410px;px;
-  height:310x;
-}
-  */
-
-.title:hover{
-  background-color:green;
+.page-header h1 {
+  font-size: clamp(1.4rem, 4vw, 2.5rem);
 }
 
-.image-display{
-  background-color:red;
-  display:flex;
-  flex-direction:row;
-  flex-wrap: wrap;
+.page-header p {
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+}
+
+/* ===== VIDEO GRID ===== */
+.video-gallery {
+  display: grid;
+ grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  padding: clamp(1rem, 4vw, 2rem);
+}
+
+/* ===== VIDEO CARD ===== */
+.video-item {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.video-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ===== VIDEO THUMB ===== */
+.video-thumb {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;   /* 🔥 KEY FIX */
+  background: #000;
+}
+
+.video-thumb video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== PLAY ICON ===== */
+.play-icon {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: clamp(2rem, 6vw, 3rem);
+  color: #fff;
+  background: rgba(0,0,0,0.35);
+  pointer-events: none;
+}
+
+/* ===== TITLE ===== */
+.video-item h3 {
+  padding: 0.9rem;
+  text-align: center;
+  font-size: clamp(0.9rem, 2.5vw, 1.05rem);
+}
+
+/* ===== LIGHTBOX ===== */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  z-index: 9999;
+
+  display: flex;
   justify-content: center;
-  position:absolute;
-  border-style:solid;
-  left:0;
-  right:0;
-  height:fit-content;
+  align-items: center;
+  padding: 1rem;
 }
-.home-link{
-  text-align:left;
-  font-size:large;
-  margin-top:-40px;
-  
+
+/* Lightbox Video */
+.lightbox video {
+  width: 100%;
+  max-width: 900px;
+  max-height: 80vh;        /* 🔥 MOBILE FIX */
+  border-radius: 10px;
+  background: #000;
 }
-a{
-  color:white;
+
+/* Close Button */
+.close-btn {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  color: #fff;
+  cursor: pointer;
+  z-index: 10000;
 }
-.display-large{
-  width:600px;
-  height:70vh;
-  background-color:red;
-  
+
+/* ===== SMALL DEVICES ===== */
+@media (max-width: 480px) {
+  .video-gallery {
+    gap: 1rem;
+  }
+
+  .video-item h3 {
+    padding: 0.75rem;
+  }
 }

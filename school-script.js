@@ -92,14 +92,14 @@ window.addEventListener("resize", handleSidebarVisibility);
 const topBtn = document.querySelector('.top-button');
 if (topBtn) topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: "smooth" }));
 
-const bottomBtn = document.querySelector('.scroll-down');
-if (bottomBtn) bottomBtn.addEventListener('click', () => window.scrollTo({ top: 2150, behavior: "smooth" }));
+const mission = document.querySelector('.scroll-down');
+if (mission) mission.addEventListener('click', () => window.scrollTo({ top: 2450, behavior: "smooth" }));
 
 const bottomBtn2 = document.querySelector('.scroll-down2');
 if (bottomBtn2) bottomBtn2.addEventListener('click', () => window.scrollTo({ top: 2500, behavior: "smooth" }));
 
 const programme = document.querySelector('.programme');
-if (programme) programme.addEventListener('click', () => window.scrollTo({ top: 540, behavior: "smooth" }));
+if (programme) programme.addEventListener('click', () => window.scrollTo({ top: 650, behavior: "smooth" }));
 
 // ======= Animated Text =======
 const text = document.getElementById("animatedText");
