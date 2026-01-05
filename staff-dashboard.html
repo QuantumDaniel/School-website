@@ -8,150 +8,78 @@
 <body>
 
 <div class="dashboard">
-
     <!-- Sidebar -->
     <aside class="sidebar">
         <h2>Staff Panel</h2>
-        <a href="#results">Results</a>
-        <a href="#assignments">Assignments</a>
-        <a href="#attendance">Attendance</a>
-        <a href="#profile">Profile</a>
+         <a class = "home" href="#Home">Home</a>
+        <a class = "result" href="#results">Results</a>
+        <a class = "assignment" href="#assignments">Assignments</a>
+        <a class = "attendance" href="#attendance">Attendance</a>
+        <a class = " profile" href="#profile">Profile</a>
+       
     </aside>
 
     <!-- Main Content -->
     <main class="main">
 
-        <header class="header">
-            <h1>Staff Dashboard</h1>
-            <p>All information entered here is reflected on the Student Dashboard</p>
-        </header>
+        <div id="staff-home">
 
-        <!-- ================= RESULTS ================= -->
-        <section id="results" class="card">
-            <h3>Upload Student Result</h3>
+    <h2>Welcome, John 👋</h2>
+    <p class="subtitle">Here’s an overview of your activities today.</p>
 
-            <div class="step">
-                <label>Select Class</label>
-                <select>
-                    <option>JSS 1</option>
-                    <option>JSS 2</option>
-                    <option>SS 1</option>
-                </select>
-            </div>
+    <!-- Summary Cards -->
+    <div class="stats-grid">
 
-            <div class="step">
-                <label>Select Subject</label>
-                <select>
-                    <option>Mathematics</option>
-                    <option>Physics</option>
-                    <option>Chemistry</option>
-                </select>
-            </div>
+        <div class="stat-card">
+            <h3>Classes</h3>
+            <p>3</p>
+        </div>
 
-            <div class="step">
-                <label>Select Student</label>
-                <select>
-                    <option>Daniel Abur</option>
-                    <option>John Doe</option>
-                </select>
-            </div>
+        <div class="stat-card">
+            <h3>Subjects</h3>
+            <p>5</p>
+        </div>
 
-            <form class="grid">
-                <input type="number" placeholder="Assessment / CA (30)">
-                <input type="number" placeholder="Exam Score (70)">
+        <div class="stat-card">
+            <h3>Assignments Posted</h3>
+            <p>12</p>
+        </div>
 
-                <input type="text" placeholder="Total Score (Auto)">
-                <input type="text" placeholder="Grade (Auto)">
+        <div class="stat-card">
+            <h3>Attendance Taken</h3>
+            <p>8</p>
+        </div>
 
-                <button>Save Result</button>
-            </form>
+    </div>
 
-            <small>
-                * Total and Grade are calculated by the system and fetched by the student
-            </small>
-        </section>
+    <!-- Quick Actions -->
+    <div class="quick-actions">
+        <h3>Quick Actions</h3>
 
-        <!-- ================= ASSIGNMENTS ================= -->
-        <section id="assignments" class="card">
-            <h3>Post Assignment</h3>
+        <div class="actions">
+            <button>Upload Results</button>
+            <button>Post Assignment</button>
+            <button>Mark Attendance</button>
+        </div>
+    </div>
 
-            <div class="grid">
-                <select>
-                    <option>Select Class</option>
-                    <option>JSS 1</option>
-                    <option>SS 1</option>
-                </select>
+    <!-- Recent Activities -->
+    <div class="recent-activities">
+        <h3>Recent Activities</h3>
 
-                <select>
-                    <option>Select Subject</option>
-                    <option>Mathematics</option>
-                    <option>Physics</option>
-                </select>
+        <ul>
+            <li>✔ Attendance marked for JSS 2 – 5 Feb</li>
+            <li>✔ Assignment posted for SS 1 Physics</li>
+            <li>✔ Results uploaded for JSS 1 Mathematics</li>
+        </ul>
+    </div>
 
-                <input type="date">
+</div>
 
-                <textarea placeholder="Assignment Instructions"></textarea>
-
-                <button>Post Assignment</button>
-            </div>
-
-            <small>
-                * Assignment becomes visible on the student dashboard instantly
-            </small>
-        </section>
-
-        <!-- ================= ATTENDANCE ================= -->
-        <section id="attendance" class="card">
-            <h3>Mark Attendance</h3>
-
-            <div class="step">
-                <label>Select Class</label>
-                <select>
-                    <option>JSS 1</option>
-                    <option>SS 1</option>
-                </select>
-            </div>
-
-            <!-- Student List (Appears after class selection) -->
-            <div class="student-list">
-                <div class="student-card">
-                    <p>Daniel Abur</p>
-                    <select>
-                        <option>Present</option>
-                        <option>Absent</option>
-                    </select>
-                </div>
-
-                <div class="student-card">
-                    <p>John Doe</p>
-                    <select>
-                        <option>Present</option>
-                        <option>Absent</option>
-                    </select>
-                </div>
-            </div>
-
-            <button class="save-btn">Save Attendance</button>
-
-            <small>
-                * Attendance percentage is calculated and shown to students
-            </small>
-        </section>
-
-        <!-- ================= PROFILE ================= -->
-        <section id="profile" class="card">
-            <h3>Staff Profile</h3>
-
-            <p><strong>Name:</strong> John Doe</p>
-            <p><strong>Department:</strong> Science</p>
-            <p><strong>Role:</strong> Subject Teacher</p>
-            <p><strong>Email:</strong> staff@school.com</p>
-
-            <button>Edit Profile</button>
-        </section>
 
     </main>
 </div>
 
+<script src="staffDashboard.js"></script>
 </body>
 </html>
