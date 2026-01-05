@@ -145,3 +145,380 @@ small {
     margin-top: 10px;
     color: #64748b;
 }
+
+#result-view {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#result-view h2 {
+    margin-bottom: 10px;
+}
+
+#result-view p {
+    margin-bottom: 20px;
+    color: #64748b;
+}
+
+/* Steps */
+#result-view .step {
+    margin-bottom: 15px;
+}
+
+#result-view .step label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#result-view select,
+#result-view input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+}
+
+/* Form Grid */
+#result-view .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* Readonly fields */
+#result-view input[readonly] {
+    background: #f1f5f9;
+    color: #64748b;
+}
+
+/* Button */
+#result-view button {
+    padding: 10px 15px;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#result-view button:hover {
+    background: #1d4ed8;
+}
+
+/* Small text */
+#result-view small {
+    display: block;
+    margin-top: 10px;
+    color: #64748b;
+}
+
+/*assignment/
+
+#assignment-view {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#assignment-view h2 {
+    margin-bottom: 10px;
+}
+
+#assignment-view p {
+    margin-bottom: 20px;
+    color: #64748b;
+}
+
+/* Steps */
+#assignment-view .step {
+    margin-bottom: 15px;
+}
+
+#assignment-view .step label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#assignment-view select,
+#assignment-view input,
+#assignment-view textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+}
+
+/* Textarea larger */
+#assignment-view textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Button */
+#assignment-view button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#assignment-view button:hover {
+    background: #1d4ed8;
+}
+
+/* Small text */
+#assignment-view small {
+    display: block;
+    margin-top: 10px;
+    color: #64748b;
+}
+
+/*attendance*/
+
+#attendance-view {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#attendance-view h2 {
+    margin-bottom: 10px;
+}
+
+#attendance-view p {
+    margin-bottom: 20px;
+    color: #64748b;
+}
+
+/* Steps */
+#attendance-view .step {
+    margin-bottom: 15px;
+}
+
+#attendance-view .step label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#attendance-view select,
+#attendance-view input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cbd5e1;
+}
+
+/* Student List as UL */
+.student-list-ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* Each student row */
+.student-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: #f9fafb;
+}
+
+/* Student name takes most space */
+.student-item .student-name {
+    flex: 3;
+    font-weight: 500;
+}
+
+/* Present/Absent dropdown smaller */
+.student-item .attendance-status {
+    width: 50% !important;
+    padding: 5px;
+    border-radius: 5px;
+    background:antiquewhite;
+}
+
+/* Button */
+#attendance-view button {
+    padding: 10px 15px;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#attendance-view button:hover {
+    background: #1d4ed8;
+}
+
+/* Small text */
+#attendance-view small {
+    display: block;
+    margin-top: 10px;
+    color: #64748b;
+}
+.student-name {
+    width:70% !important;
+}
+
+/*profile*/
+#profile-view {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Header */
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #2563eb;
+}
+
+/* Name & Role */
+.profile-basic h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.profile-basic span {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* Card */
+.profile-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Rows */
+.profile-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 15px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.profile-row:last-child {
+    border-bottom: none;
+}
+
+/* Labels */
+.profile-row .label {
+    font-weight: bold;
+    color: #475569;
+}
+
+/* Button */
+.edit-profile-btn {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-profile-btn:hover {
+    background: #1d4ed8;
+}
+
+/*main*/
+#staff-home {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.subtitle {
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+/* Stats */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    background: #f1f5f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.stat-card h3 {
+    font-size: 14px;
+    color: #475569;
+    margin-bottom: 8px;
+}
+
+.stat-card p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Quick Actions */
+.quick-actions {
+    margin-bottom: 25px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.actions button {
+    padding: 10px 15px;
+    border: none;
+    background: #2563eb;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.actions button:hover {
+    background: #1d4ed8;
+}
+
+/* Recent */
+.recent-activities ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.recent-activities li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e2e8f0;
+    color: #334155;
+}
