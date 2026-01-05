@@ -454,18 +454,7 @@ profile.addEventListener('click', () => {
       <p>Personal information and biodata</p>
     </div>
 
-    <!-- Profile Card -->
-    <div class="profile-card">
-      <div class="avatar">
-        <img src="avatar.png" alt="Student Photo">
-      </div>
-
-      <div class="basic-info">
-        <h3>John Daniel</h3>
-        <p>Student ID: STD-2025-014</p>
-        <span class="class">SS2 – Science</span>
-      </div>
-    </div>
+   
 
     <!-- Biodata Section -->
     <div class="biodata">
