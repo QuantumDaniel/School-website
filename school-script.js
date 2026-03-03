@@ -128,7 +128,7 @@ function setupBackgroundButton(btnClass, bgImage, displayText, viewText) {
   });
 }
 
-setupBackgroundButton('.button1', 'images/Admistrative block.jpg', 'Welcome to Telescope<br> International Schools <br> Jeje Karshi', 'View 👉..');
+setupBackgroundButton('.button1', 'images/Admistrative block.jpg', 'Welcome to Quantum<br> International Schools <br> ivory Karshi', 'View 👉..');
 setupBackgroundButton('.button2', 'images/IMG_20240526_180109_087 (1) (1)@249234736.jpg', 'Conducive Atmospere <br> for Efficient Learning', 'Explore...');
 setupBackgroundButton('.button3', 'images/IMG_0535.jpeg', 'Join Our <br> Exciting Extracurricular Activities', 'Join us...');
 setupBackgroundButton('.button4', 'images/IMG_20240526_180136_107 (1) (1)@633120083.jpg', 'Experienced and <br> Dedicated Staff', 'View 👉...');

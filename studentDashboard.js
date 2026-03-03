@@ -22,7 +22,7 @@ result.addEventListener('click', () => {
   sections.innerHTML = `
  
   <div class="dashboard">
-    <div><div class="logo-container"><img src="images/telescope logo.png" alt="call"></div><h1 class = "result-school-name">TELESCOPE INTERNATIONAL SCHOOLS FIRST TERM RESULT</h1></div>
+    <div><div class="logo-container"><img src="images/Quantum logo.png" alt="call"></div><h1 class = "result-school-name">Quantum INTERNATIONAL SCHOOLS FIRST TERM RESULT</h1></div>
 
     <!-- Selectors -->
     <div class="selectors">
